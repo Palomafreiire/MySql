@@ -9,6 +9,9 @@ CREATE TABLE tb_rh(
     area_trabalho VARCHAR (255)
 );
 
+ALTER TABLE tb_rh CHANGE area_trabalho  cargo VARCHAR(255);  -- para alterar o nome da coluna da planilha;
+ALTER TABLE tb_rh MODIFY COLUMN telefone VARCHAR (255);      -- modificando uma coluna
+
 SELECT * FROM tb_rh;
 
 INSERT INTO tb_rh (nome_colaborador,telefone,email,valor_salario,area_trabalho) VALUES ("Paloma",81122323,"palomafreiire@hotmail.com", 3000, "TI");
